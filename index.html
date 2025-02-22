@@ -6,36 +6,153 @@
   <meta name="author" content="Art 444 Student">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="150">
-  <title><divclass"container"Welcome to my website!
+  <title>Welcome to my website!</title>
     
   
-  <link ref="stylesheet" href="css/styles.css"></title>
+  <link ref="stylesheet" href="css/styles.css">
   
  <style> 
- .no-spacing {
+ .no-spacing
+  {
   word-spacing: 0;
  }
- nav{
+ nav
+ {
     padding: 30px;
     text-align: center;
     font-size: 20px;
     word-spacing: 10px;
   }
-  .profilepicture{
+  .profilepicture
+  {
     display:flex;
     padding: 20px 200px;
   }
-  .profilepicture img{
+  .profilepicture img
+  {
     width: 100%;
     max-width: 450px;
     height: auto;
 
    } /*this is my container for my picture*/
-  .aboutme{
+  .aboutme      
+  {
     width: 60%;
     padding: 100px;
   }/*about me container*/
   
+  /*this is skills*/
+  .skills-section
+  {
+    text-align: center;
+    padding: 50px 20px
+  }
+  .skills-container
+  { 
+    display: flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap: wrap;
+
+  }
+  .skills-item img
+  {
+    width: 60px;     /* icon image re-sized*/
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+  .skills-tittle
+  {
+    font-size:medium;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .skill-item
+  {
+    text-align: center;
+    max-width: 400px/*check this */
+  
+  }
+  .skills-item i
+  {
+    font: 0size 80px;      /*icon size*/
+    margin-bottom: 10px
+  }
+  .skills-item p
+  { 
+    font-size:1.4rem; /*this is font size for text*/
+    font-weight: bold;
+  }
+  /*this is gallery section*/
+  .gallery-section
+  {
+    font: size 18px;
+    padding-left: 10%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .gallery-tittle
+  {
+    font-size:medium;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .gallery-img
+  {
+    width: 100%;
+    height: auto;
+    display: block;
+
+  }
+  .gallery-container
+  { 
+    padding: 20px;
+    width: 60%;
+    margin: 50px;
+   
+    /*this is fAQ*/
+   
+  } 
+  .faq-container
+  {
+    width: 60%
+    padding 20px;
+    border-radius: 8px;
+    margin:0 auto;
+    margin-top: 50px;
+    text-align: center;
+
+  }
+  .faq-h2
+  {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  }
+ .faq-item h4
+ {
+  font-size: 1.5rem;
+  font-weight:bold;
+ }
+ .faq-item p 
+ {
+  font-size:1.2rem;
+  margin-top: 10px;
+  padding: 10px;
+ }
+
+.footer-section
+{
+  text-align: center;
+  padding: 20px;
+  width:100%;
+}
 
 
 
@@ -45,14 +162,6 @@
 <body>
 
 
-
-
-  <!--practice -->
-  <!--<nav>
-    <a href="#about" about></a>
-  </nav>
--->
-
 <nav>
 
 <section id="navbar">
@@ -60,11 +169,11 @@
 <div class="container">
   <b>
   <a href="#home">Home</a>
-  <a href="#about" class="no-spacing">About Me</a>
-  <a href="#skills">Skills</a>
-  <a href="#Gallery">Gallery</a>
-  <a href="#Faq">Faq</a>
-  <a href="#Contact">Contact</a>
+  <a href="#aboutme" class="no-spacing">About Me</a>
+  <a href="#skills-title">Skills</a>
+  <a href="#gallery-title">Gallery</a>
+  <a href="#faq-section">Faq</a>
+  <a href="#c">Contact</a> <!--is not required-->
 
   </b>
   
@@ -78,15 +187,13 @@
 <!-- MAIN HEADER --> 
   <section id="header" class="header">
     <div class="profilepicture">
-     <img src="images/profilesabrina.jpg" alt="profilesabrina">
+     <img src="images/sabrinaprofiletemporary.png" alt="sabrinaprofiletemporary">
 
      
       <div class="aboutme">
-        <h2>about me</h2>
+        <h1> Hi I’m Sabrina Rios.</h1>
         <p>I am a student at SDSU, focusing on UX/UI design. In my free time, I love photography and capturing interesting moments. I'm excited to learn and grow in both design and photography. </p>
       </div>
-  
-
   
     </div>
   </section>
@@ -95,51 +202,130 @@
 
 
 <!-- SKILLS SECTION -->  
-<section id="skills">
-  <div class="container">
-    <h2>Skills</h2>
-    <ul>
-      <li>Photoshop </li>
-      <li>Ilustrator </li>
-      <li>Indeisgn </li>
-      <li>Communication </li>
-      <li>Problem solving</li>
-      <li>Team Work </li>
-    </ul>
+<section id="skills-section">
+<div class="skills-tittle">
+  <h1>My Skills</h1>
+
+
+     <div class="skills-container">
+       <!--this is Ilustrator"-->
+  <div class="skill-item">
+    <img src="images/ilustrator.png"alt= "ilustrator"> <!-- this needs to be filled up with the icon-->
+      <i class="fab fa-illustrator"></i>
+       <p>Adobe Ilustrator </p>
+       </div>
+       <!--this is indesign"-->
+  <div class="skill-item">
+    <img src="images/indesign.png"alt= "indesign"> <!-- this needs to be filled up with the icon-->
+         <i class="Adobe"></i>
+          <p>Adobe Indesign  </p>
+          </div>
+      <!--Photoshop icon"-->
+  <div class="skill-item">
+    <img src="images/photoshop.png"alt= "photoshop"> <!-- this needs to be filled up with the icon-->
+           <i class="fab fa-adobe"></i>
+           <p>Adobe Photoshop</p>
+      </div>
+     <!--webflow icon-->
+   <div class="skill-item">
+    <img src="images/webflow.png"alt= "webflow"> <!-- this needs to be filled up with the icon-->
+        <i class="fab fa-webflow"></i>
+          <p>webflow</p>
+        </div>
+  <div class="skill-item">
+  <!---this is figma-->
+       <i class="fab fa-figma"></i>
+       <img src="images/figma.png"alt= "figma"> <!-- this needs to be filled up with the icon -->
+       <p>Figma</p>
+       </div>
+<!---this is communication-->
+  <div class="skill-item">
+    <img src="images/communication.png"alt= "communication"> 
+    <i class=" fas fa-communication"></i>
+    <p>Communication</p>
+     </div>
+<!---this is problem solving-->
+<div class="skill-item">
+  <img src="images/problemsolving.png"alt= "problemsolving"> 
+    <i class="fab fa-lightbulb"></i> 
+     <p> problem solving</p>
+    </div>
+    <!--this is teamwork -->
+<div class="skill-item">
+  <img src="images/teamwork.png"alt= "teamwork"> 
+      <i class="fas fa user"></i>
+      <p>Team work</p>
+
+</div>
+
+ 
   </div>
+  
 </section>
 
 <!-- GALLERY SECTION -->  
-<section id="gallery">
-  <div class="container">
-    <h2>Gallery</h2>
-    <img src="images/placeholder.jpg" alt="Placeholder" width="300" height="300" />
+<section id="gallery-container">
+  <div class="gallery-tittle">
+  <h1>Gallery</h1>
+    <div class="gallery-img">
+    <img src="images/shewaves-trifold.jpg" alt="shewaves-trifold"/>
+    <img src="images/jopara-balance.png" alt="jopara-balance"/>
+    <img src="images/jopara-advertized.png" alt="jopara-advertized"/>
+    <img src="images/jopara-teabagsamples.png" alt="jopara-teabagsamples" />
+    <img src="images/jopara-3-flavors.png" alt="jopara-3-flavors" />
+    <img src="images/kokotuca-logo.png" alt="kokotuca-logo"/>
+    <img src="images/kokotuca-chocolatebar.png" alt="kokotuca-chocolatebar"/>
+    <img src="images/kokotuca-3-flavors.png" alt="kokotuca-3-flavors"/>
+    <img src="images/a-woman-speaks.jpg" alt="a-woman-speaks" /></div>
     
-
-  </div>
+    
+    
+    
+    
+    
+ </div>
 </section>
 
-<!-- FAQ SECTION -->  
-<section id="Faq">
-  <div class="container">
-    <h2>Frequent Asked Questions</h2>
-      <h3>When will you be graduating from SDSU?</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at nibh et massa convallis varius non tempus mauris. Phasellus ex augue, consectetur et mi eget, egestas finibus purus. Vivamus et tempor nunc. Curabitur et elit justo. Ut viverra sapien sit amet posuere viverra. Quisque porta consectetur felis, a ultricies odio consequat sit amet. Duis pellentesque laoreet leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id ligula vitae mauris tincidunt pellentesque. Cras pretium mauris et facilisis sollicitudin.</p>
-      <h3>What do you have planned for after graduation?</h3>
-      <p>Nunc commodo, libero efficitur auctor lobortis, mauris neque laoreet sem, ultrices iaculis sem purus suscipit odio. Sed tempor mauris non accumsan rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce diam magna, efficitur et elit quis, ornare molestie lorem. Pellentesque a tincidunt mauris, ac pretium ligula. Nam sed risus enim. Integer pulvinar placerat urna, volutpat tincidunt dui facilisis sed. Nunc ac augue eu metus vestibulum laoreet non pulvinar nunc. Ut tempus erat vitae molestie blandit. Maecenas vitae libero nisi. Cras ultrices consectetur egestas. Curabitur dapibus orci sapien, sodales sodales urna volutpat non.</p>
-      <h3>What was your favorite class you took at SDSU?</h3>
-      <p>Nunc pharetra, urna vel dignissim cursus, nisi ante vehicula turpis, in vulputate mi ex sit amet dui. Pellentesque auctor lorem quis mi luctus ullamcorper. Phasellus sit amet ultricies felis, feugiat mattis diam. Fusce laoreet scelerisque pretium. Praesent at tortor a dolor bibendum lobortis eget eget lacus. Phasellus ut nisi non orci facilisis commodo a eget nulla. Suspendisse sit amet augue sed diam placerat lacinia vehicula vel velit. In non neque ante. Suspendisse felis enim, feugiat quis magna sit amet, vehicula fringilla ligula. Mauris at eros ut ipsum imperdiet egestas.</p>
-      <h3>What work are you most proud producing at SDSU?</h3>
-      <p>Aenean scelerisque mauris cursus lectus volutpat, nec facilisis justo elementum. Cras nec pretium metus, sed convallis risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod odio et odio consectetur, et dictum orci maximus. In elementum enim ex, vitae molestie lectus scelerisque non. Vestibulum ipsum nibh, pellentesque sed condimentum sit amet, eleifend eget orci. Pellentesque ac purus sapien. Vestibulum tellus elit, semper et urna ac, porta vulputate ligula. Phasellus aliquet urna nisi, a tincidunt metus ullamcorper vitae. Nam aliquam dolor nec tempor commodo. Donec tellus velit, fringilla non leo sed, auctor mollis sapien.</p>
-  </div>
-</section>
+<!-- FAQ SECTION -->
+ <section id="faq-container">
+ <div class="faq-container">
+  <h2>Frequent Asked Questions</h2>
+
+  <!-- 1st question-->
+    <div class="faq-item">
+    <h4>When will you be graduating from SDSU?</h4>
+    <p> I will graduated in may 2025</p>
+ </div>
+    <!--faq 2nd question-->
+    <div class="faq-item">
+   
+      <h4>What do you have planned for after graduation?</h4>
+       <p> work </p>
+    </div>
+
+    <!--faq 3rd question-->
+    <div class="faq-item">
+      <h4>What was your favorite class you took at SDSU?</h4>
+     <p> My favorite class is UI/UX DESIGN </p>
+    </div>
+     <!--faq 4rd question-->
+     <div class="faq-item">
+      <h4>What work are you most proud producing at SDSU?</h4>
+     <p> Webdesign</p>
+     </div>
+
+     </div>
+     </section>
+    
 
 <!-- FOOTER SECTION -->  
 <footer>
-  <div class="container">
+  <div class="footer-section">
       <p>Sabrina Rios. Copywrite © 2025, All Rights Reserved</p>
   </div>
 </footer>
+</body>
+
 
 <script src="js/script.js"></script>
 </body>
