@@ -7,180 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="150">
   <title>Welcome to my website!</title>
-    
-  
-  <link ref="stylesheet" href="css/styles.css">
-  
- <style> 
- .no-spacing
-  {
-  word-spacing: 0;
- }
- nav
- {
-    padding: 30px;
-    text-align: center;
-    font-size: 20px;
-    word-spacing: 10px;
-  }
-  .profilepicture
-  {
-    display:flex;
-    padding: 20px 200px;
-  }
-  .profilepicture img
-  {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-
-   } /*this is my container for my picture*/
-  .aboutme      
-  {
-    width: 60%;
-    padding: 100px;
-  }/*about me container*/
-  
-  /*this is skills*/
-  .skills-section
-  {
-    text-align: center;
-    padding: 50px 20px
-  }
-  .skills-container
-  { 
-    display: flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap: wrap;
-
-  }
-  .skills-item img
-  {
-    width: 60px;     /* icon image re-sized*/
-    height: 60px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-  .skills-tittle
-  {
-    font-size:medium;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .skill-item
-  {
-    text-align: center;
-    max-width: 400px/*check this */
-  
-  }
-  .skills-item i
-  {
-    font: 0size 80px;      /*icon size*/
-    margin-bottom: 10px
-  }
-  .skills-item p
-  { 
-    font-size:1.4rem; /*this is font size for text*/
-    font-weight: bold;
-  }
-  /*this is gallery section*/
-  .gallery-section
-  {
-    font: size 18px;
-    padding-left: 10%;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .gallery-tittle
-  {
-    font-size:medium;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .gallery-img
-  {
-    width: 100%;
-    height: auto;
-    display: block;
-
-  }
-  .gallery-container
-  { 
-    padding: 20px;
-    width: 60%;
-    margin: 50px;
-   
-    /*this is fAQ*/
-   
-  } 
-  .faq-container
-  {
-    width: 60%
-    padding 20px;
-    border-radius: 8px;
-    margin:0 auto;
-    margin-top: 50px;
-    text-align: center;
-
-  }
-  .faq-h2
-  {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  }
- .faq-item h4
- {
-  font-size: 1.5rem;
-  font-weight:bold;
- }
- .faq-item p 
- {
-  font-size:1.2rem;
-  margin-top: 10px;
-  padding: 10px;
- }
-
-.footer-section
-{
-  text-align: center;
-  padding: 20px;
-  width:100%;
-}
-
-
-
-  </style>
-</head>
-
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
 <body>
 
 
-<nav>
-
-<section id="navbar">
-
+<nav class="nav-container">
 <div class="container">
-  <b>
   <a href="#home">Home</a>
   <a href="#aboutme" class="no-spacing">About Me</a>
-  <a href="#skills-title">Skills</a>
-  <a href="#gallery-title">Gallery</a>
-  <a href="#faq-section">Faq</a>
-  <a href="#c">Contact</a> <!--is not required-->
-
-  </b>
-  
+  <a href="#skills-section">Skills</a>
+  <a href="#gallery-container">Gallery</a>
+  <a href="#faq-container">Faq</a>
+  <a href="#c">Contact</a> <!--is not required yet-->
 </div>
 
 </nav>
-</section>
 <!--image splip WITH ABOUT ME-->
 
 
@@ -192,139 +34,164 @@
      
       <div class="aboutme">
         <h1> Hi I’m Sabrina Rios.</h1>
-        <p>I am a student at SDSU, focusing on UX/UI design. In my free time, I love photography and capturing interesting moments. I'm excited to learn and grow in both design and photography. </p>
-      </div>
-  
+        <p> I’m a UX/UI Designer with a passion for creating accessible and inclusive apps that make a meaningful impact. I thrive on the design process—starting with initial sketches and experimenting with different materials to find innovative solutions that push boundaries.
+
+          Nature is my biggest inspiration, and I love to incorporate its simplicity and beauty into my work. In my free time, I enjoy photography, capturing the stunning moments in nature that inspire my creativity. I also spend time outdoors, surfing, and practicing yoga, which help keep me grounded and further fuel my design thinking.
+          
+          I’m excited to continue growing as a designer and apply my skills to create user-friendly, impactful experiences.
     </div>
   </section>
-  
-
-
-
-<!-- SKILLS SECTION -->  
-<section id="skills-section">
-<div class="skills-tittle">
-  <h1>My Skills</h1>
-
-
-     <div class="skills-container">
-       <!--this is Ilustrator"-->
-  <div class="skill-item">
-    <img src="images/ilustrator.png"alt= "ilustrator"> <!-- this needs to be filled up with the icon-->
-      <i class="fab fa-illustrator"></i>
-       <p>Adobe Ilustrator </p>
-       </div>
-       <!--this is indesign"-->
-  <div class="skill-item">
-    <img src="images/indesign.png"alt= "indesign"> <!-- this needs to be filled up with the icon-->
-         <i class="Adobe"></i>
-          <p>Adobe Indesign  </p>
-          </div>
-      <!--Photoshop icon"-->
-  <div class="skill-item">
-    <img src="images/photoshop.png"alt= "photoshop"> <!-- this needs to be filled up with the icon-->
-           <i class="fab fa-adobe"></i>
-           <p>Adobe Photoshop</p>
-      </div>
-     <!--webflow icon-->
-   <div class="skill-item">
-    <img src="images/webflow.png"alt= "webflow"> <!-- this needs to be filled up with the icon-->
-        <i class="fab fa-webflow"></i>
-          <p>webflow</p>
-        </div>
-  <div class="skill-item">
-  <!---this is figma-->
-       <i class="fab fa-figma"></i>
-       <img src="images/figma.png"alt= "figma"> <!-- this needs to be filled up with the icon -->
-       <p>Figma</p>
-       </div>
-<!---this is communication-->
-  <div class="skill-item">
-    <img src="images/communication.png"alt= "communication"> 
-    <i class=" fas fa-communication"></i>
-    <p>Communication</p>
-     </div>
-<!---this is problem solving-->
-<div class="skill-item">
-  <img src="images/problemsolving.png"alt= "problemsolving"> 
-    <i class="fab fa-lightbulb"></i> 
-     <p> problem solving</p>
-    </div>
-    <!--this is teamwork -->
-<div class="skill-item">
-  <img src="images/teamwork.png"alt= "teamwork"> 
-      <i class="fas fa user"></i>
-      <p>Team work</p>
-
-</div>
-
- 
+  <!--TELL ME MORE Button-->
+<section class="button-section"> 
+ <div class="button-container"> 
+ <div class="button-container">
+ <div class="button-text">TELL ME MORE</div> 
+  </div> 
   </div>
+  </section>
   
-</section>
-
+   
+ <!-- Quote Container -->
+ <div class="quote-container">
+  <p>"The only way to do great work is to love what you do."</p>
+  <p class="author">- Steve Jobs</p>
+</div>
 <!-- GALLERY SECTION -->  
 <section id="gallery-container">
   <div class="gallery-tittle">
   <h1>Gallery</h1>
-    <div class="gallery-img">
-    <img src="images/shewaves-trifold.jpg" alt="shewaves-trifold"/>
-    <img src="images/jopara-balance.png" alt="jopara-balance"/>
-    <img src="images/jopara-advertized.png" alt="jopara-advertized"/>
-    <img src="images/jopara-teabagsamples.png" alt="jopara-teabagsamples" />
-    <img src="images/jopara-3-flavors.png" alt="jopara-3-flavors" />
-    <img src="images/kokotuca-logo.png" alt="kokotuca-logo"/>
-    <img src="images/kokotuca-chocolatebar.png" alt="kokotuca-chocolatebar"/>
-    <img src="images/kokotuca-3-flavors.png" alt="kokotuca-3-flavors"/>
-    <img src="images/a-woman-speaks.jpg" alt="a-woman-speaks" /></div>
-    
-    
-    
-    
-    
-    
- </div>
+  </div>
+  <div class="gallery-container img"> 
+  <img class="image-item" src="images/jopara-3-flavors.png"/> <!-- image 1-->
+  <img class="image-item" src="images/kokotuca-logo.png"/> <!-- image 2-->
+  <img class="image-item" src="images/kokotuca-chocolatebar.png" /><!-- image 3-->
+  <img class="image-item" src="images/jopara-advertized.png" /><!-- image 4-->
+  <img class="image-item" src="images/jopara-teabagsamples.png" /><!-- image 5-->
+  <img class="image-item" src="images/jopara-balance.png" /> <!-- image 6-->
+  <img class="image-item" src="images/shewaves-trifold.jpg" /> <!-- image 7-->
+  <img class="image-item" src="images/kokotuca-3-flavors.png" /> <!-- image 8-->
+  <img class="image-item" src="images/kokotuca-3-flavors.png" /> <!-- image 9 this need to be change, all images will be change at one point :) -->
+</div>
+<!-- this is botton view my entired -->
+ <section class="button-section">
+<div class="button-container"> 
+  <div class="button-text">VIEW MY ENTIRE PORTFOLIO</div> 
+</div> 
 </section>
 
-<!-- FAQ SECTION -->
- <section id="faq-container">
- <div class="faq-container">
-  <h2>Frequent Asked Questions</h2>
-
-  <!-- 1st question-->
-    <div class="faq-item">
-    <h4>When will you be graduating from SDSU?</h4>
-    <p> I will graduated in may 2025</p>
- </div>
-    <!--faq 2nd question-->
-    <div class="faq-item">
-   
-      <h4>What do you have planned for after graduation?</h4>
-       <p> work </p>
+<!-- SKILLS SECTION -->
+<!-- Skills Section -->
+<section id="skills-section">
+  <div class="container-skills">
+    <!-- Skill Item 1 -->
+    <div class="skill-item">
+      <img class="skill-img" src="images/ai.png" alt="Skill 1">
+      <p>ILUSTRATOR</p>
     </div>
-
-    <!--faq 3rd question-->
-    <div class="faq-item">
-      <h4>What was your favorite class you took at SDSU?</h4>
-     <p> My favorite class is UI/UX DESIGN </p>
+    <!-- Skill Item 2 -->
+    <div class="skill-item">
+      <img class="skill-img" src="images/ps.png" alt="Skill 2">
+      <p>PHOTOSHOP</p>
     </div>
-     <!--faq 4rd question-->
-     <div class="faq-item">
-      <h4>What work are you most proud producing at SDSU?</h4>
-     <p> Webdesign</p>
-     </div>
-
-     </div>
-     </section>
-    
-
-<!-- FOOTER SECTION -->  
-<footer>
-  <div class="footer-section">
-      <p>Sabrina Rios. Copywrite © 2025, All Rights Reserved</p>
+    <!-- Skill Item 3 -->
+    <div class="skill-item">
+      <img class="skill-img" src="images/id.png" alt="Skill 3">
+      <p>INDESIGN</p>
+    </div>
+    <!-- Skill Item 4 -->
+    <div class="skill-item">
+      <img class="skill-img" src="images/figma 2.png" alt="Skill 4">
+      <p>FIGMA</p>
+    </div>
+    <!-- Skill Item 5 -->
+    <div class="skill-item">
+      <img class="skill-img" src="images/webflow.png" alt="Skill 5">
+      <p>WEBFLOW</p>
+    </div>
+    <!-- Skill Item 6 -->
+    <div class="skill-item">
+      <img class="skill-img" src="images/problemsolving.png" alt="Skill 6">
+      <p>TEAM WORK</p>
+    <!--skills item 7-->
+    <div class="skill-item">
+        <img class="skill-img" src="images/communiccation.png" alt="Skill 7">
+        <p>COMMUNICATION</p>
+    <!--skills item 8-->
+    <div class="skill-item">
+    <img class="skill-img" src="images/create.png" alt="Skill 8">
+    <p> PROBLEM SOLVING </p>
+    </div>
   </div>
-</footer>
-</body>
+ </section>
+
+  
+
+
+<!-- FAQ SECTION -->
+ <!-- FAQ Header --> 
+ 
+ <section id="faq-container">
+ <div class="faq-header">FAQS</div> 
+ <div class="faq-container">
+  <!-- FAQ Items --> 
+   <div class="faq-item">
+   <div class="faq-question"> 
+    What was your favorite class you took at SDSU? </div> 
+  <div class="faq-answer"> My favorite classes at SDSU were Experimental Typography and UX Design.
+     Experimental Typography allowed me to explore the creative possibilities of type, 
+     while UX Design taught me how to design with the user in mind,focusing on intuitive and engaging 
+     experiences. Both courses have greatly influenced my design approach.  </div>
+  </div> <div 
+  class="faq-item"> 
+  <div class="faq-question"> What do you have planned for after graduation? </div> 
+  <div class="faq-answer"> After graduation, I plan to work in the UX Design field, and in my free time,
+     I’ll focus on freelance design projects. This will allow me to gain more experience and expand my portfolio 
+     while continuing to grow in the UX Design industry. 
+  </div> </div> 
+  <div class="faq-item"> <div class="faq-question"> What work are you most proud of producing at SDSU? 
+  </div> <div class="faq-answer"> The work I’m most proud of producing at SDSU is from my Experimental Typography class. 
+    I experimented with different materials and worked in analog, which allowed me to push the boundaries of traditional 
+    typography and explore creative, tactile design approaches. It was a great opportunity to break out of digital tools 
+    and focus on hands-on, innovative methods.
+ </div> </div> 
+  <div class="faq-item"> <div class="faq-question"> When will you be graduating from SDSU? 
+  </div> <div
+   class="faq-answer"> I am graduating from SDSU in May 2025 with a degree in Art and Graphic Design, focusing 
+   on Web Design and UX/UI Design.
+
+
+
+ 
+  </div> </div> 
+</div>
+
+<!-- Footer Section --> 
+ <div class="footer">
+ <!-- Copyright Text --> 
+<div class="footer-text"> 
+<p>© Sabrina Rios 2025</p>
+ </div> 
+<!-- Icon Container --> 
+ <div class="icon-container">
+ <!-- First row of icons (existing ones)  
+  <div class="icon"> 
+    <img src="https://placehold.co/50x50" alt="Icon 1"class="icon-img" />
+   </div>
+    <div
+    class="icon"> 
+    <img src="https://placehold.co/50x50" alt="Icon 2" class="icon-img" /> 
+  </div> -->
+<!-- Second row of icons (Instagram and LinkedIn) --> 
+ <div class="icon"> 
+  <img src="https://placehold.co/50x50?text=IG" alt="Instagram Icon"  class="icon-img" /> 
+</div>
+ <div class="icon"> <img src="https://placehold.co/50x50?text=LI" alt="LinkedIn Icon" class="icon-img" /> 
+  </div>
+ </div> 
+</div>
+ 
+  
+ 
 
 
 <script src="js/script.js"></script>
